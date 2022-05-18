@@ -1,0 +1,50 @@
+.providers {
+	position: relative;
+	height: 100vh;
+	@include flex-aligned();
+	gap: 50px;
+	&__image {
+		width: 65%;
+	}
+	&__card {
+		@include flex-aligned-column();
+		align-items: flex-start;
+	}
+	&__heading {
+		font-size: 36px;
+		margin-bottom: 40px;
+		font-weight: bold;
+	}
+	&__line {
+		width: 100px;
+		height: 2px;
+		background-color: #83afe1;
+		margin: none;
+	}
+	&__paragraph {
+		font-size: 18px;
+		color: $paragraph-color;
+		margin-top: 40px;
+		line-height: 36px;
+		margin-bottom: 30px;
+	}
+	&__learn-more {
+		@include button-white();
+	}
+	&__learn-more:hover {
+		@include button-white-hover();
+	}
+	&__under1 {
+		position: absolute;
+		z-index: -3;
+		bottom: -70px;
+		left: 0;
+	}
+	&__under2 {
+		width: 130px;
+		position: absolute;
+		z-index: -2;
+		bottom: -50px;
+		right: -150px;
+	}
+}

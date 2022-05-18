@@ -1,0 +1,84 @@
+.header {
+	height: 100vh;
+}
+
+.nav {
+	@include flex-aligned();
+	justify-content: space-between;
+	margin-top: 50px;
+	&__logo {
+		@include flex-aligned();
+		div {
+			@include flex-aligned();
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background-color: #458ff6;
+			p {
+				color: #ffffff;
+				font-weight: bold;
+				font-size: 24px;
+			}
+		}
+	}
+	&__logo-end {
+		margin-left: 10px;
+		color: #233348;
+		font-size: 24px;
+	}
+	&__list {
+		@include flex-aligned();
+		gap: 30px;
+	}
+	&__item:first-child .nav__link {
+		font-weight: bold;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: #1f1534;
+		font-size: 18px;
+	}
+	&__link:hover {
+		color: #458ff6;
+	}
+}
+.healthcare {
+	position: relative;
+	margin-top: 50px;
+	@include flex-aligned();
+	justify-content: space-between;
+
+	&__card {
+		@include flex-aligned-column();
+		justify-content: space-between;
+		align-items: flex-start;
+
+		width: 28%;
+		gap: 50px;
+	}
+	&__heading {
+		font-size: 48px;
+		color: #000;
+		font-weight: 700;
+	}
+	&__paragraph {
+		font-size: 21px;
+		color: $paragraph-color;
+		line-height: 48px;
+	}
+	&__img {
+		width: 40%;
+	}
+	&__consult-today {
+		@include button-blue();
+	}
+	&__consult-today:hover {
+		@include button-blue-hover();
+	}
+	&__left-dots {
+		position: absolute;
+		top: 250px;
+		left: -170px;
+	}
+}

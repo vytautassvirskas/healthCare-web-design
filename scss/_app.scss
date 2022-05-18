@@ -1,0 +1,41 @@
+.app {
+	position: relative;
+	height: 100vh;
+	@include flex-aligned();
+	gap: 100px;
+	&__image {
+		width: 65%;
+	}
+	&__card {
+		@include flex-aligned-column();
+		align-items: flex-start;
+		width: 35%;
+	}
+	&__heading {
+		font-size: 36px;
+		margin-bottom: 40px;
+		font-weight: bold;
+	}
+	&__line {
+		width: 100px;
+		height: 2px;
+		background-color: #83afe1;
+		margin: none;
+	}
+	&__paragraph {
+		font-size: 18px;
+		color: $paragraph-color;
+		margin-top: 40px;
+		line-height: 36px;
+		margin-bottom: 30px;
+	}
+	&__download-now {
+		@include button-white();
+		img {
+			margin-left: 10px;
+		}
+	}
+	&__download-now:hover {
+		@include button-white-hover();
+	}
+}

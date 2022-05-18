@@ -1,0 +1,67 @@
+.comments {
+	position: relative;
+	&__background {
+		background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+		border-radius: 20px;
+		text-align: center;
+		padding: 80px 120px 40px;
+	}
+	&__heading {
+		font-size: 36px;
+		color: #fff;
+		margin-bottom: 40px;
+		font-weight: bold;
+	}
+	&__line {
+		width: 100px;
+		height: 2px;
+		background-color: #fff;
+		margin: 0 auto;
+	}
+	&__container {
+		@include flex-aligned();
+		gap: 15px;
+	}
+	&__info {
+		@include flex-aligned-column();
+		align-items: flex-start;
+		width: 40%;
+		gap: 30px;
+	}
+	&__author-name {
+		font-size: 22px;
+		color: #fff;
+	}
+	&__company {
+		font-size: 18px;
+		color: #fff;
+	}
+	&__paragpraph {
+		font-size: 19px;
+		color: #fff;
+		margin-top: 40px;
+		line-height: 48px;
+		margin-bottom: 30px;
+		text-align: left;
+		width: 40%;
+	}
+	&__under1 {
+		width: 130px;
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		right: 0px;
+	}
+	&__under2 {
+		width: 130px;
+		position: absolute;
+		z-index: 3;
+		bottom: 20px;
+		left: -80px;
+	}
+	&__slider {
+		@include flex-aligned();
+		margin: 40px 0;
+		gap: 60px;
+	}
+}
