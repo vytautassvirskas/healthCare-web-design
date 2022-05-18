@@ -612,4 +612,109 @@ body {
   margin: 40px 0;
   gap: 60px;
 }
+
+.article {
+  text-align: center;
+  position: relative;
+}
+
+.article__under {
+  position: absolute;
+  z-index: -2;
+  right: 0;
+}
+
+.article__heading {
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.article__line {
+  width: 100px;
+  height: 2px;
+  background-color: #83afe1;
+  margin: 0 auto;
+}
+
+.article__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 40px 30px 30px;
+}
+
+.article__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  line-height: 32px;
+  text-align: left;
+}
+
+.article__title {
+  font-size: 21px;
+  font-weight: bold;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.article__text {
+  color: #7d7987;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.article__link {
+  color: #4089ed;
+  width: 90%;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.article__link img {
+  margin-left: 10px;
+}
+
+.article__view-all {
+  background-color: transparent;
+  color: #458ff6;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 15px 25px;
+  border-radius: 25px;
+  border: 1px solid #458ff6;
+  cursor: pointer;
+  -webkit-transition: background-color 0.1s ease-in, color 0.1s ease-in;
+  transition: background-color 0.1s ease-in, color 0.1s ease-in;
+  padding: 6px 45px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.article__view-all:hover {
+  background-color: #458ff6;
+  color: #fff;
+}
 /*# sourceMappingURL=index.css.map */
